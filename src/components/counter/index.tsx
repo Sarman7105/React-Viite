@@ -2,7 +2,7 @@ import "./index.scss";
 import { Dispatch } from "react";
 import { Space, Button } from "antd";
 import { connect } from "react-redux";
-import { decrement, increment } from "../../../redux/counter/actions";
+import { decrement, increment } from "../../redux/counter/actions";
 interface IState {
   value: number;
 }
