@@ -1,0 +1,36 @@
+.navbar-container {
+  height: 80px;
+  padding: 0 60px;
+  background-color: #044c56;
+  .nav-bar {
+    height: 100%;
+    .nav-bar-items {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      list-style: none;
+      .nav-bar-item {
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        .nav-bar-link {
+          font-size: 20px;
+          font-weight: 700;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+.main-container {
+  min-height: calc(100vh - 160px);
+  background-color: #ffffff;
+}
+
+.footer-container {
+  background-color: #ffffff;
+  border-top: 1px solid #c9c9c9;
+  text-align: center;
+  font-size: 18px;
+}

@@ -5,37 +5,3 @@
   box-sizing: border-box;
   font-family: "DM Sans";
 }
-.error-class {
-  border: 1px solid #b70202 !important;
-}
-
-.disabled {
-  opacity: 0.5;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 32px 15px 32px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.button.left {
-  flex-direction: row;
-}
-
-.button.right {
-  flex-direction: row;
-}
-
-.icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  margin-left: 10px;
-}

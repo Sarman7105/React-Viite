@@ -1,16 +1,17 @@
 import { Layout as AntLayout } from "antd";
 import { Navbar } from "./navbar";
-import { Footer as FooterContent } from "./footer";
+import { Footer } from "./footer";
+import "./index.scss";
 interface IProps {
-  children: any;
+  children: JSX.Element;
 }
 export function Layout(props: IProps) {
-  const { Header, Content, Footer } = AntLayout;
+  const { Content } = AntLayout;
   return (
     <AntLayout>
       <Navbar />
-      <Content>{props.children}</Content>
-      <FooterContent />
+      <Content className="main-container">{props.children}</Content>
+      <Footer />
     </AntLayout>
   );
 }
