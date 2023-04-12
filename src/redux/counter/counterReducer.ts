@@ -1,7 +1,7 @@
 import { DECREMENT, INCREMENT } from "./actionTypes";
-import { ICounterAction } from "./type";
+import { ICounterAction, ICounterState } from "./type";
 
-const initialState = {
+const initialState: ICounterState = {
   value: 0,
 };
 const counterReducer = (state = initialState, action: ICounterAction) => {

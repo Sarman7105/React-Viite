@@ -1,18 +1,16 @@
-import "./index.scss";
 import { Space, Button } from "antd";
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "../../redux/counter/actions";
+import { sIncrement, sDecrement } from "../../redux/staticCounter/actions";
 import { IState } from "../../type";
 
-
 const Counter = () => {
-  const count = useSelector((state: IState) => state.counter.value);
+  const count = useSelector((state: IState) => state.staticCounter.value);
   const dispatch = useDispatch();
   const handleIncrement = () => {
-    dispatch(increment(5));
+    dispatch(sIncrement());
   };
   const handleDecrement = () => {
-    dispatch(decrement(5));
+    dispatch(sDecrement());
   };
   return (
     <div className="counter-container">
